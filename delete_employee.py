@@ -3,7 +3,7 @@
 from employment_records import EmploymentRecord, find_employee
 
 
-def delete_employee(
+def delete_employe(
     employee_id: int, records: list[EmploymentRecord]
 ) -> list[EmploymentRecord]:
     """Return a new list with an employee removed."""
