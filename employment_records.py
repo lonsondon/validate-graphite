@@ -10,12 +10,12 @@ from typing import Any
 class EmploymentRecord:
     """A small, serializable employment record for demo and test data."""
 
-    employee_id: int
+    employee_id: str
     first_name: str
     last_name: str
     job_title: str
     department: str
-    start_date: str
+    start_date: int
     salary: int
     employment_type: str = "Full-time"
     active: bool = True
