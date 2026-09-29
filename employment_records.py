@@ -16,7 +16,7 @@ class EmploymentRecord:
     job_title: str
     department: str
     start_date: int
-    salary: int
+    salary: double
     employment_type: str = "Full-time"
     active: bool = True
 
