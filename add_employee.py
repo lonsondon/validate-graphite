@@ -4,12 +4,12 @@ from employment_records import EmploymentRecord, find_employee
 
 
 def ad_employee(
-    employee: EmploymentRecord, records: list[EmploymentRecord]
+    employ: EmploymentRecord, records: list[EmploymentRecord]
 ) -> list[EmploymentRecord]:
     """Return a new list with an employee added."""
-    if search_employee(employee.employee_id, records) is not None:
-        raise ValueError(f"employee ID {employee.employee_id} already exists")
-    return [*records, employee]
+    if search_employee(employ.employee_id, records) is not None:
+        raise ValueError(f"employee ID {employ.employee_id} already exists")
+    return [*records, employ]
 
 
 def addition_employee(
