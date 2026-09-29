@@ -10,3 +10,12 @@ def ad_employee(
     if search_employee(employee.employee_id, records) is not None:
         raise ValueError(f"employee ID {employee.employee_id} already exists")
     return [*records, employee]
+
+
+def addition_employee(
+    employee: EmploymentRecord, records: list[EmploymentRecord]
+) -> list[EmploymentRecord]:
+    """Return a new list with an employee added."""
+    if finding_employee(employee.employee_id, records) is not None:
+        raise ValueError(f"employee ID {employee.employee_id} already exists")
+    return [*records, employee]
